@@ -14,6 +14,8 @@
     <link rel="icon" href="./assets/logo192white.png">
     <link rel="apple-touch-icon" href="./assets/logo192white.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>WlaczRemont.pl - remonty, łazienki, kładzenie kafli, Wloclawek, Płock, Toruń</title>
     <script src="./script-main.js" defer></script>
 </head>
@@ -213,34 +215,106 @@
             <h2 class="textMain1">Realizacje.</h2>
             <p class="textMain2">Moje ostatnie realizacje:</p>
         </div>
-        <div class="realizations__imgsContainer">
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/01.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/02.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/03.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/04.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/05.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/06.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/07.jpg" alt="łazienka">
-            </figure>
-            <figure data-aos="flip-up" class="realizations__figure">
-                <img class="img" src="./assets/realizations/08.jpg" alt="łazienka">
-            </figure>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/01.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/02.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/03.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/04.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/05.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/06.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/07.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/08.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/09.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/10.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/11.jpg" alt="łazienka">
+                    </figure>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
         </div>
-        <p class="realizations__more">Zobacz więcej zdjęć</p>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/50.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/51.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/52.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/53.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/54.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/55.jpg" alt="łazienka">
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img class="img" src="./assets/realizations/56.jpg" alt="łazienka">
+                    </figure>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+
+
     </section>
+
+
+
 
 
     <section class="advice">
@@ -354,6 +428,9 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
