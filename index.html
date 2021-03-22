@@ -11,8 +11,9 @@
     <!--font-family: 'Kalam', cursive;-->
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/logo192black.png">
-    <link rel="apple-touch-icon" href="./assets/logo192black.png">
+    <link rel="icon" href="./assets/logo192white.png">
+    <link rel="apple-touch-icon" href="./assets/logo192white.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>WlaczRemont.pl - remonty, łazienki, kładzenie kafli, Wloclawek, Płock, Toruń</title>
     <script src="./script-main.js" defer></script>
 </head>
@@ -33,10 +34,12 @@
             </a>
 
             <ul class="nav__list">
+                <div class="nav__line"></div>
                 <a href="#about" class="nav__a">O mnie</a>
                 <a href="#offer" class="nav__a">Oferta</a>
                 <a href="#realizations" class="nav__a">Realizacje</a>
                 <a href="#contact" class="nav__a">Kontakt</a>
+                <div class="nav__line"></div>
             </ul>
 
             <div class="burgerMenu">
@@ -48,142 +51,156 @@
 
 
     <section class="start">
-        <div class="start__container">
-            <figure class="start__figure">
-                <img class="img" src="./assets/start.jpg" alt="łazienka po remoncie">
-            </figure>
-            <div class="start__descContainer">
-                <p class="start__text1">Remonty</p>
-                <p class="start__text2">od A <spam class="textAccent"> do Z</spam>
+
+        <figure class="start__figure">
+            <img class="start__img" src="./assets/start/1.jpg" alt="łazienka po remoncie">
+        </figure>
+
+        <div class="start__blackFilter"></div>
+
+        <div class="start__descTextContainer">
+            <h1 data-aos="fade-right" class="start__text1">Remonty</h1>
+            <div data-aos="fade-left" class="start__tex2Container">
+                <p class="start__text2">od <span class="start__textBig">A</spam>
+                </p>
+                <p class="start__text3">do <span class="start__textBig">Z</span>
                 </p>
             </div>
         </div>
+
+        <i class="start__arrow"></i>>
+
     </section>
 
 
     <section class="about">
-        <div id="about"></div>
-        <figure class="about__figure">
-            <img class="img" src="./assets/about.jpeg" alt="about">
-        </figure>
-        <div class="about__descContainer">
-            <p class="textMain1">O mnie.</p>
-            <p class="textMain2">Cześć, jestem Iwo.</p>
-            <p class="textMain3">Jeśli zajrzałeś na tą stronę to znaczy, że jesteś zainteresowany profesjonalnym
-                wykonaniem remontu swojego mieszkania, lokalu bądź jakiejś jego części. Jestem przekonany, że dobrze
-                trafiłeś.</p>
+        <div class="about__container">
+            <div id="about"></div>
+            <figure data-aos="fade-right" class="about__figure">
+                <img class="img" src="./assets/about.jpeg" alt="about">
+            </figure>
+            <div class="about__descContainer">
+                <p class="textMain1">O mnie.</p>
+                <p class="textMain2">Cześć, jestem Iwo.</p>
+                <h2 class="textMain3">Jeśli zajrzałeś na tą stronę to znaczy, że jesteś zainteresowany profesjonalnym
+                    wykonaniem remontu swojego mieszkania, lokalu bądź jakiejś jego części. Jestem przekonany, że dobrze
+                    trafiłeś.</h2>
+            </div>
         </div>
     </section>
 
 
-    <section class="offer">
+    <main class="offer">
         <div class="offer__container">
             <div id="offer"></div>
             <div class="offer__descContainer">
-                <p class="textMain1">Oferta.</p>
+                <h2 class="textMain1">Oferta.</h2>
                 <p class="textMain2 colorWhite">Poznaj moj zakres prac:</p>
             </div>
             <div class="offer__itemsContainer">
-                <div class="offer__item">
+                <div data-aos="flip-left" class="offer__item">
                     <figure class="offer__figure">
                         <img class="img" src="./assets/lazienki.jpg" alt="about">
                     </figure>
-                    <p class="offer__itemTitle">Łazienki</p>
+                    <h2 class="offer__itemTitle">Łazienki</h2>
                     <p class="offer__itemText">Kompleksowe wykończenia Łazienek.</p>
                 </div>
 
-                <div class="offer__item">
+                <div data-aos="flip-left" class="offer__item">
                     <figure class="offer__figure">
                         <img class="img" src="./assets/instalacje.jpg" alt="about">
                     </figure>
-                    <p class="offer__itemTitle">Instalacje</p>
+                    <h2 class="offer__itemTitle">Instalacje</h2>
                     <p class="offer__itemText">Przeróbki hydrauliczne i elektryczne.</p>
                 </div>
 
-                <div class="offer__item">
+                <div data-aos="flip-left" class="offer__item">
                     <figure class="offer__figure">
                         <img class="img" src="./assets/montaz.jpg" alt="about">
                     </figure>
-                    <p class="offer__itemTitle">Montaż</p>
+                    <h2 class="offer__itemTitle">Montaż</h2>
                     <p class="offer__itemText">Montaż armatury, brodzikow, wanien, szafek</p>
                 </div>
 
-                <div class="offer__item">
+                <div data-aos="flip-left" class="offer__item">
                     <figure class="offer__figure">
                         <img class="img" src="./assets/wykonczenia.jpg" alt="about">
                     </figure>
-                    <p class="offer__itemTitle">Wykończenia</p>
+                    <h2 class="offer__itemTitle">Wykończenia</h2>
                     <p class="offer__itemText">Szpachlowanie, malowanie i tapetowanie.</p>
                 </div>
 
-                <div class="offer__item">
+                <div data-aos="flip-left" class="offer__item">
                     <figure class="offer__figure">
                         <img class="img" src="./assets/konstrukcje.jpg" alt="about">
                     </figure>
-                    <p class="offer__itemTitle">Konstrukcje</p>
+                    <h2 class="offer__itemTitle">Konstrukcje</h2>
                     <p class="offer__itemText">Sucha zabudowa, podwieszane sufity.</p>
                 </div>
 
-                <div class="offer__item">
+                <div data-aos="flip-left" class="offer__item">
                     <figure class="offer__figure">
                         <img class="img" src="./assets/powierzchnie.jpg" alt="about">
                     </figure>
-                    <p class="offer__itemTitle">Powierzchnie</p>
+                    <h2 class="offer__itemTitle">Powierzchnie</h2>
                     <p class="offer__itemText">Kładzenie glazury i terakowy. Panele i listwy</p>
                 </div>
 
             </div>
         </div>
-    </section>
+    </main>
 
 
     <section class="why">
-        <div class="why__descContainer">
-            <p class="textMain1">Dlaczego ja?</p>
-            <p class="textMain2">Co mnie wyróżnia:</p>
+        <div class="why__container">
+            <div class="why__descContainer">
+                <h2 class="textMain1">Dlaczego ja?</h2>
+                <p class="textMain2">Co mnie wyróżnia:</p>
 
-            <div class="why__textContainer">
-                <p class="why__number">.01</p>
-                <p class="textMain3">Każde zlecenie, którego się podejmuje to nie
-                    mozolna praca, którą
-                    trzeba wykonać, tylko
-                    okazja do podniesienia swoich kwalifikacji. To również hobby, w które wkładam całe serce. Moja
-                    zasada:
-                    albo robisz coś dobrze, albo wcale.</p>
+                <div class="why__textContainer">
+                    <p class="why__number">.01</p>
+                    <p class="textMain3">Każde zlecenie, którego się podejmuje to nie
+                        mozolna praca, którą
+                        trzeba wykonać, tylko
+                        okazja do podniesienia swoich kwalifikacji. To również hobby, w które wkładam całe serce. Moja
+                        zasada:
+                        albo robisz coś dobrze, albo wcale.</p>
+                </div>
+                <div class="why__textContainer">
+                    <p class="why__number">.02</p>
+                    <p class="textMain3">Moim priorytetem jest twoje zadowolenie. Nic więc dziwnego, że chcąc to
+                        osiągnąć
+                        codziennie pogłębiam swoją wiedzę, pragnąc znaleźć najlepsze rozwiązania i patenty do realizacji
+                        twoich
+                        projektów. Pomaga mi w tym również bogate doświadczenie zdobyte podczas rozmaitych szkoleń oraz
+                        inwestowanie w profesjonalny sprzęt wysokiej klasy.</p>
+                </div>
+                <div class="why__textContainer">
+                    <p class="why__number">.03</p>
+                    <p class="textMain3">Szanuje twoją własność, dlatego przykładałam się dbania o porządek w miejscu
+                        wykonywania prac.</p>
+                </div>
             </div>
-            <div class="why__textContainer">
-                <p class="why__number">.02</p>
-                <p class="textMain3">Moim priorytetem jest twoje zadowolenie. Nic więc dziwnego, że chcąc to osiągnąć
-                    codziennie pogłębiam swoją wiedzę, pragnąc znaleźć najlepsze rozwiązania i patenty do realizacji
-                    twoich
-                    projektów. Pomaga mi w tym również bogate doświadczenie zdobyte podczas rozmaitych szkoleń oraz
-                    inwestowanie w profesjonalny sprzęt wysokiej klasy.</p>
-            </div>
-            <div class="why__textContainer">
-                <p class="why__number">.03</p>
-                <p class="textMain3">Szanuje twoją własność, dlatego przykładałam się dbania o porządek w miejscu
-                    wykonywania prac.</p>
-            </div>
+            <figure data-aos="fade-left" class="why__figure">
+                <img class="img" src="./assets/why.png" alt="about">
+            </figure>
         </div>
-        <figure class="why__figure">
-            <img class="img" src="./assets/why.jpeg" alt="about">
-        </figure>
     </section>
 
 
     <section class="investment">
         <div class="investment__container">
-            <figure class="investment__figure1">
+            <figure data-aos="fade-up-right" class="investment__figure1">
                 <img class="img" src="./assets/invest1.jpeg" alt="porada">
             </figure>
             <div class="investment__textContainer">
                 <p class="textMain1">Investycja</p>
-                <p class="textMain2 colorWhite">Remont od A-Z</p>
+                <h2 class="textMain2 colorWhite">Remont od A-Z</h2>
                 <p class="textMain3 colorWhite">Musisz mieć tylko pomysł, a ja zajmę się resztą. Wykonam cały remont od
                     początku
                     dokońca. </p>
             </div>
-            <figure class="investment__figure2">
+            <figure data-aos="fade-down-left" class="investment__figure2">
                 <img class="img" src="./assets/invest2.jpg" alt="porada">
             </figure>
         </div>
@@ -193,32 +210,32 @@
     <section class="realizations">
         <div id="realizations"></div>
         <div class="realizations__descContainer">
-            <p class="textMain1">Realizacje.</p>
+            <h2 class="textMain1">Realizacje.</h2>
             <p class="textMain2">Moje ostatnie realizacje:</p>
         </div>
         <div class="realizations__imgsContainer">
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/01.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/02.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/03.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/04.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/05.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/06.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/07.jpg" alt="łazienka">
             </figure>
-            <figure class="realizations__figure">
+            <figure data-aos="flip-up" class="realizations__figure">
                 <img class="img" src="./assets/realizations/08.jpg" alt="łazienka">
             </figure>
         </div>
@@ -228,7 +245,7 @@
 
     <section class="advice">
         <div class="advice__container">
-            <figure class="advice__figure">
+            <figure data-aos="fade-right" class="advice__figure">
                 <img class="img" src="./assets/advice1.jpg" alt="porada">
             </figure>
             <div class="advice__textContainer">
@@ -239,7 +256,7 @@
                     "zaoszczędzić"! To napewno się zemści. Skorzytaj z nowoczesnych rozwiązań i sprawdzonego fachowca.
                 </p>
             </div>
-            <figure class="advice__figure">
+            <figure data-aos="fade-left" class="advice__figure">
                 <img class="img" src="./assets/advice2.jpg" alt="porada">
             </figure>
         </div>
@@ -248,32 +265,34 @@
 
 
     <section class="contact">
-        <div id="contact"></div>
-        <figure class="contact__figure">
-            <img class="img" src="./assets/contact.jpeg" alt="contact">
-        </figure>
+        <div class="contact__containerMain">
+            <div id="contact"></div>
+            <figure data-aos="fade-right" class="contact__figure">
+                <img class="img" src="./assets/contact.jpeg" alt="contact">
+            </figure>
 
-        <div class="contact__container">
-            <div class="contact__descContainer">
-                <p class="textMain1">Kontakt.</p>
-                <p class="textMain2">Skontaktuj się ze mną:</p>
-            </div>
+            <div class="contact__container">
+                <div class="contact__descContainer">
+                    <p class="textMain1">Kontakt.</p>
+                    <p class="textMain2">Skontaktuj się ze mną:</p>
+                </div>
 
-            <div class="contact__items">
-                <a class="contact__item" href='tel:+48662893150'>
-                    <svg class="contact__itemIcon" viewBox="0 0 24 24">
-                        <path
-                            d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
-                    </svg>
-                    <p class="contact__itemText">tel: +48 662-893-150</p>
-                </a>
-                <a class="contact__item" href='mailto:info@wlaczremont.pl?subject=Zapytanie'>
-                    <svg class="contact__itemIcon" viewBox="0 0 24 24">
-                        <path
-                            d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
-                    </svg>
-                    <p class="contact__itemText">e-mail: info@wlaczremont.pl</p>
-                </a>
+                <div class="contact__items">
+                    <a class="contact__item" href='tel:+48662893150'>
+                        <svg class="contact__itemIcon" viewBox="0 0 24 24">
+                            <path
+                                d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
+                        </svg>
+                        <p class="contact__itemText">tel: +48 662-893-150</p>
+                    </a>
+                    <a class="contact__item" href='mailto:info@wlaczremont.pl?subject=Zapytanie'>
+                        <svg class="contact__itemIcon" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                        </svg>
+                        <p class="contact__itemText">e-mail: info@wlaczremont.pl</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -334,8 +353,7 @@
         </div>
     </footer>
 
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>
