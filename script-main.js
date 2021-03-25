@@ -24,53 +24,6 @@ navBurgerButton.addEventListener("click", () => {
 })
 
 
-
-// img slider start 
-const start = document.querySelector(".start")
-
-const startArray = [
-    "./assets/start/1.jpg",
-    "./assets/start/2.jpg",
-    "./assets/start/3.jpg",
-    "./assets/start/4.jpg",
-    "./assets/start/5.jpg",
-]
-
-let counter = 1 // 0 is default
-
-const imgSlider = () => {
-    setInterval(() => {
-
-        const startFigure = document.querySelector(".start__figure")
-
-        // create figure with img
-        const figureS = document.createElement("figure")
-        figureS.classList.add("start__figure")
-        const imgS = document.createElement("img")
-        imgS.classList.add("start__img")
-        imgS.src = startArray[counter]
-        imgS.alt = "łazienka po remoncie"
-        figureS.appendChild(imgS)
-
-        // append figure to DOM
-        start.appendChild(figureS)
-
-        // remove old figure
-        setTimeout(() => {
-            start.removeChild(startFigure)
-        }, 3000)
-
-        // increase counter
-        counter += 1
-        counter === startArray.length ? counter = 0 : null
-
-    }, 4000)
-}
-
-imgSlider()
-
-
-
 // swipper
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
