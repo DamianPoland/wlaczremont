@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Life Savers', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -73,7 +73,7 @@ a:active {
     font-size: 1rem;
     padding-top: 1rem;
     color: rgb(var(--text));
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2rem;
 }
 
@@ -253,14 +253,50 @@ a:active {
 
 
 
+/* section ABOUT */
+
+.about {
+    background-color: white;
+}
+
+.about__container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 8rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -4rem;
+}
+
+.about__figure {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.about__descContainer {
+    flex: 1;
+    padding: 2rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* section REALIZATIONS */
 
 .realizations {
-    margin-top: 4rem;
     background: white;
     position: relative;
-    padding: 4rem 0;
+    padding: 4rem 0 8rem 0;
     display: flex;
     flex-direction: column;
 }
@@ -319,42 +355,6 @@ a:active {
 }
 
 
-
-/* section ABOUT */
-
-.about {
-    background-color: white;
-}
-
-.about__container {
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-    padding: 4rem 0 8rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#about {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -4rem;
-}
-
-.about__figure {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.about__descContainer {
-    flex: 1;
-    padding: 2rem 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-}
 
 /* section OFFER */
 
@@ -426,7 +426,7 @@ a:active {
     padding-top: 1rem;
     line-height: 1.5rem;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* section WHY */
